@@ -1,0 +1,106 @@
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+color: #111;
+background: #fff;
+}
+
+/* NAV MINIMAL */
+.minimal-nav {
+position: fixed;
+width: 100%;
+top: 0;
+background: rgba(255,255,255,0.9);
+backdrop-filter: blur(6px);
+}
+
+.nav-inner {
+display: flex;
+justify-content: space-between;
+padding: 20px 50px;
+}
+
+.logo {
+font-family: 'Playfair Display', serif;
+font-size: 18px;
+}
+
+.menu a {
+margin-left: 30px;
+text-decoration: none;
+color: #111;
+font-size: 13px;
+}
+
+/* HERO */
+.hero {
+height: 100vh;
+display: flex;
+align-items: center;
+padding-left: 10%;
+}
+
+.hero h1 {
+font-family: 'Playfair Display', serif;
+font-size: 64px;
+margin: 0;
+}
+
+.hero p {
+font-size: 14px;
+margin-top: 10px;
+}
+
+/* SECTIONS */
+.section {
+padding: 140px 60px;
+}
+
+.narrow {
+max-width: 700px;
+margin: auto;
+}
+
+/* PROJECTS estilo editorial */
+.projects-list div {
+margin-bottom: 10px;
+font-size: 14px;
+}
+
+/* ART GRID */
+.art-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 40px;
+}
+
+/* PIEZAS */
+.art-piece {
+height: 320px;
+background: #f5f5f5;
+position: relative;
+overflow: hidden;
+}
+
+/* TEXTO OCULTO */
+.art-piece span {
+position: absolute;
+bottom: 15px;
+left: 15px;
+font-size: 12px;
+opacity: 0;
+transition: 0.3s;
+}
+
+/* HOVER elegante */
+.art-piece:hover span {
+opacity: 1;
+}
+
+/* FOOTER */
+footer {
+text-align: center;
+padding: 60px;
+font-size: 12px;
+color: #777;
+}
