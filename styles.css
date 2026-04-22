@@ -117,3 +117,13 @@ color: #777;
   align-items: flex-start;
   gap: 40px;
 }
+
+.text {
+  flex: 1;
+}
+
+.image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
