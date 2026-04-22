@@ -41,9 +41,9 @@ padding-left: 10%;
 }
 
 .hero h1 {
-font-family: 'Playfair Display', sherif;
-font-size: 40px;
-margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0;
 }
 
 .hero p {
