@@ -252,9 +252,10 @@ width: 100%;
 
 
 .comentario {
-  float: left;
-  width: 700px;
+  width: 700px;          /* estrecho */
   font-size: 16px;
-  color: #555;
-  margin-right: 20px;
+  color: black;
+  padding: 100px;
+  border-left: 300px;
+  margin: 100px 0;
 }
