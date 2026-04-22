@@ -111,19 +111,34 @@ color: #777;
   color: inherit;
 }
 
-.section narrow {
+/* CONTENEDOR PRINCIPAL */
+.projects-list {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
 }
 
+/* TEXTO A LA IZQUIERDA */
 .text {
   flex: 1;
 }
 
+/* IMAGEN A LA DERECHA (CUADRADA) */
 .image img {
   width: 250px;
   height: 250px;
   object-fit: cover;
+}
+
+/* 📱 RESPONSIVE (MÓVILES) */
+@media (max-width: 768px) {
+  .projects-list {
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
 }
