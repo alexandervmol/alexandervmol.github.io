@@ -177,12 +177,16 @@ width="100%" height="600" frameborder="0">
 
 <script>
 function openLightbox(imageSrc) {
-document.getElementById("lightbox").style.display = "flex";
-document.getElementById("lightbox-img").src = imageSrc;
+const lightbox = document.getElementById("lightbox");
+const img = document.getElementById("lightbox-img");
+
+img.src = imageSrc;
+lightbox.classList.add("active");
 }
 
 function closeLightbox() {
-document.getElementById("lightbox").style.display = "none";
+const lightbox = document.getElementById("lightbox");
+lightbox.classList.remove("active");
 }
 </script>
 
