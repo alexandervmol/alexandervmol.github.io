@@ -153,3 +153,8 @@ color: #777;
   font-weight: 500;
   transition: 0.3s ease;
 }
+
+.social-btn:hover {
+  background-color: #c8235a;
+  transform: scale(1.05);
+}
