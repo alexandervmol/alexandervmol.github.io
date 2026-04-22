@@ -215,6 +215,24 @@ lightbox.classList.remove("active");
   <span class="close" onclick="closeVideo()">&times;</span>
   <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
 </div>
+
+<script>
+function openVideo(videoURL) {
+  const modal = document.getElementById("video-modal");
+  const frame = document.getElementById("video-frame");
+
+  frame.src = videoURL + "?autoplay=1"; // autoplay opcional
+  modal.style.display = "flex";
+}
+
+function closeVideo() {
+  const modal = document.getElementById("video-modal");
+  const frame = document.getElementById("video-frame");
+
+  modal.style.display = "none";
+  frame.src = ""; // detiene el video
+}
+</script>
   
 </body>
 </html>
