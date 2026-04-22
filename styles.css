@@ -150,3 +150,8 @@ color: #777;
   text-decoration: none;
   transition: 0.3s ease;
 }
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
