@@ -142,3 +142,14 @@ color: #777;
     height: auto;
   }
 }
+
+.social-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #E1306C;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
