@@ -76,9 +76,9 @@ gap: 40px;
 }
 
 .art-group-title {
-grid-column: 1 / -1;
+grid-column: 1 / -10;
 margin-top: 80px;
-margin-bottom: 200px;
+margin-bottom: 40px;
 }
 
 /* PIEZAS */
