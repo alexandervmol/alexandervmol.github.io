@@ -110,3 +110,10 @@ color: #777;
   text-decoration: none;
   color: inherit;
 }
+
+.section narrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
