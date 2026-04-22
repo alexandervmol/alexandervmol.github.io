@@ -153,5 +153,5 @@ color: #777;
 #contact {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
