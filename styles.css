@@ -175,3 +175,31 @@ max-width: 85%;
 max-height: 85%;
 object-fit: contain;
 }
+
+html {
+scroll-behavior: smooth;
+}
+
+section {
+scroll-margin-top: 100px;
+}
+
+.menu a {
+position: relative;
+}
+
+.menu a::after {
+content: "";
+position: absolute;
+width: 0;
+height: 1px;
+bottom: -4px;
+left: 0;
+background: #111;
+transition: width 0.3s;
+}
+
+.menu a:hover::after {
+width: 100%;
+}
+
