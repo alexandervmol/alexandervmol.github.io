@@ -213,24 +213,28 @@ lightbox.classList.remove("active");
 
 <div id="video-modal" class="modal">
   <span class="close" onclick="closeVideo()">&times;</span>
-  <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+  <video id="video-player" controls autoplay>
+    <source id="video-source" src="" type="video/mp4">
+  </video>
 </div>
 
 <script>
-function openVideo(videoURL) {
+function openLocalVideo(videoPath) {
   const modal = document.getElementById("video-modal");
-  const frame = document.getElementById("video-frame");
+  const player = document.getElementById("video-player");
+  const source = document.getElementById("video-source");
 
-  frame.src = videoURL + "?autoplay=1"; // autoplay opcional
+  source.src = videoPath;
+  player.load();
   modal.style.display = "flex";
 }
 
 function closeVideo() {
   const modal = document.getElementById("video-modal");
-  const frame = document.getElementById("video-frame");
+  const player = document.getElementById("video-player");
 
   modal.style.display = "none";
-  frame.src = ""; // detiene el video
+  player.pause();
 }
 </script>
   
