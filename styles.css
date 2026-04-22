@@ -75,6 +75,12 @@ grid-template-columns: repeat(3, 1fr);
 gap: 40px;
 }
 
+.art-group-title {
+grid-column: 1 / -1;
+margin-top: 80px;
+margin-bottom: 20px;
+}
+
 /* PIEZAS */
 .art-piece {
 height: 320px;
