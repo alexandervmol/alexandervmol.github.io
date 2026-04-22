@@ -333,3 +333,13 @@ button {
   color: white;
   cursor: pointer;
 }
+
+.art-piece::after {
+  content: "▶";
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
