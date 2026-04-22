@@ -158,3 +158,10 @@ color: #777;
   background-color: #c8235a;
   transform: scale(1.05);
 }
+
+.social-icon {
+  color: #111;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
