@@ -69,6 +69,10 @@ color: #333;
   text-align: center;
 }
 
+.section .art-group-title {
+  text-align: center;
+}
+
 /* PROJECTS estilo editorial */
 .projects-list div {
 margin-bottom: 10px;
