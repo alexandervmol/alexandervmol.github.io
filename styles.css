@@ -133,8 +133,8 @@ color: #777;
 
 /* IMAGEN A LA DERECHA (CUADRADA) */
 .image img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 
