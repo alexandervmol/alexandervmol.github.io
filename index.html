@@ -211,6 +211,19 @@ lightbox.classList.remove("active");
 }
 </script>
 
+let scale = 1;
+
+const img = document.getElementById("lightbox-img");
+
+img.addEventListener("wheel", (e) => {
+  e.preventDefault();
+
+  scale += e.deltaY * -0.001;
+  scale = Math.min(Math.max(1, scale), 3);
+
+  img.style.transform = `scale(${scale})`;
+});
+
 <div id="video-modal" class="modal">
   <span class="close" onclick="closeVideo()">&times;</span>
   <video id="video-player" controls autoplay>
