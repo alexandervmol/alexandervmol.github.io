@@ -90,7 +90,10 @@ margin: 0 auto;
 color: #333;
 }
 
-
+.section h2 
+.section h3 {
+  text-align: center;
+}
 
 
 .section .art-group-title {
