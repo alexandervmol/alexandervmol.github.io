@@ -344,8 +344,8 @@ button {
 
 .mySwiper {
   width: 100%;
-  max-width: 900px;
-  height: 450px;
+  max-width: 1000px;
+  height: 500px;
   border-radius: 16px;
   overflow: hidden;
 }
