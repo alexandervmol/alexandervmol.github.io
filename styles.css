@@ -26,11 +26,30 @@ font-family: 'Inter', Arial, sans-serif;
 font-size: 18px;
 }
 
+/* MENÚ (DESKTOP) */
+.menu {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* clave para responsive natural */
+}
+
 .menu a {
-margin-left: 30px;
-text-decoration: none;
-color: #111;
-font-size: 13px;
+  text-decoration: none;
+  color: #111;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* 📱 MÓVIL */
+@media (max-width: 768px) {
+  .nav-inner {
+    padding: 15px 20px;
+  }
+
+  .menu {
+    justify-content: flex-end;
+    gap: 15px;
+  }
 }
 
 /* HERO */
