@@ -473,3 +473,11 @@ button {
   margin: 100px 0 60px 130px;
   font-size: 14px;
 }
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .cita {
+    margin: 60px 20px; /* menos margen y centrado natural */
+    max-width: 100%;
+  }
+}
