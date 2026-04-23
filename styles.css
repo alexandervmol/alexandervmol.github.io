@@ -82,14 +82,15 @@ font-size: 14px;
 /* ART GRID */
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 40px;
+  width: 100%;
 }
 
 /* Tablet */
 @media (max-width: 900px) {
   .art-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
   }
 }
@@ -120,6 +121,12 @@ margin-bottom: 40px;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.art-grid-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* TEXTO OCULTO */
