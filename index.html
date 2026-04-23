@@ -191,33 +191,24 @@ He is a painter graduated from the Academia Profesional de Artes Visuales ALBA i
 <p>Copyright © 2026 Alexander V Molina</p> 
 </footer>
 
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-<img id="lightbox-img" src="">
-</div>
-
-<script>
-function openLightbox(imageSrc) {
-const lightbox = document.getElementById("lightbox");
-const img = document.getElementById("lightbox-img");
-
-img.src = imageSrc;
-lightbox.classList.add("active");
-}
-
 <script>
 function openLightbox(imageSrc) {
   const lightbox = document.getElementById("lightbox");
   const img = document.getElementById("lightbox-img");
 
+  if (!lightbox || !img) return;
+
   img.src = imageSrc;
   lightbox.classList.add("active");
 }
 
-function closeLightbox() {
+function closeLightbox(e) {
   const lightbox = document.getElementById("lightbox");
-  lightbox.classList.remove("active");
-}  
+
+  if (!e || e.target.id === "lightbox") {
+    lightbox.classList.remove("active");
+  }
+}
 </script>
   
 </script>
