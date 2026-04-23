@@ -428,4 +428,6 @@ button {
   font-size: 14px;
 }
 
-
+* {
+  outline: 1px solid red;
+}
