@@ -54,8 +54,8 @@ margin-top: 10px;
 
 /* SECTIONS */
 .section {
-padding: 60px 60px;
-margin: 150px 0 150px 70px;
+  padding: 40px 60px;
+  margin: 80px 0 40px 70px;
 }
 
 .narrow {
