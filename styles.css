@@ -205,12 +205,12 @@ color: #777;
   color: inherit;
 }
 
-/* CONTENEDOR PRINCIPAL */
 .projects-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  gap: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
   font-size: 14px;
   margin-top: 60px;
 }
