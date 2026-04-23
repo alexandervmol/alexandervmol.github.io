@@ -55,7 +55,7 @@ margin-top: 10px;
 /* SECTIONS */
 .section {
 padding: 140px 60px;
-margin: 100px 0 100px 70px;
+margin: 150px 0 150px 70px;
 }
 
 .narrow {
@@ -426,8 +426,4 @@ button {
   max-width: 600px;
   margin: 100px 0 60px 130px;
   font-size: 14px;
-}
-
-* {
-  outline: 1px solid red;
 }
