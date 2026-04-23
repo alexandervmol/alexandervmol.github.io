@@ -411,7 +411,7 @@ button {
 .seccion-carrusel {
   width: 85%;
   max-width: 1000px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 .descripcion-carrusel {
