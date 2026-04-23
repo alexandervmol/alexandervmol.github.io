@@ -504,7 +504,7 @@ button {
 /* Ajuste para móviles */
 @media (max-width: 768px) {
   .cita {
-    margin: 60px 20px; /* menos margen y centrado natural */
+    margin: 60px 20px; 
     max-width: 100%;
   }
 }
@@ -512,5 +512,6 @@ button {
 @media (max-width: 768px) {
   .hero h1 {
     white-space: nowrap;
+    font-size: 28px; 
   }
 }
