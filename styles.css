@@ -546,10 +546,12 @@ button {
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    gap: 30px;
   }
 
   .about-content .text {
-    text-align: center;
+    text-align: left;
+    width: 100%;
   }
 }
