@@ -86,7 +86,9 @@ font-size: 14px;
   gap: 40px;
 
   max-width: 1000px;   
-  margin: 0 auto;      
+  margin: 0 auto; 
+
+   width: 100%;
 }
 
 /* Tablet */
@@ -126,10 +128,17 @@ margin-bottom: 40px;
   display: block;
 }
 
-.art-grid-wrapper {
+.art-grid-wrapper { 
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* móvil */
+@media (max-width: 600px) {
+  .art-grid-wrapper {
+    padding: 0 10px;
+  }
 }
 
 /* TEXTO OCULTO */
