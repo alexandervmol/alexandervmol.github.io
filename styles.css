@@ -369,11 +369,11 @@ button {
 }
 
 .mySwiper {
-  width: 90%;
-  max-width: 1100px;
-  height: 450px;
-  margin: 40px auto;
-  border-radius: 16px;
+  width: 85%;
+  max-width: 900px;
+  height: 680px;
+  margin: 50px auto;
+  border-radius: 18px;
   overflow: hidden;
 }
 
