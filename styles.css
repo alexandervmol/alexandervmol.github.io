@@ -82,9 +82,11 @@ font-size: 14px;
 /* ART GRID */
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  width: 100%;
+
+  max-width: 1000px;   
+  margin: 0 auto;      
 }
 
 /* Tablet */
