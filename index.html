@@ -205,11 +205,21 @@ img.src = imageSrc;
 lightbox.classList.add("active");
 }
 
-function closeLightbox() {
-const lightbox = document.getElementById("lightbox");
-lightbox.classList.remove("active");
+<script>
+function openLightbox(imageSrc) {
+  const lightbox = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+
+  img.src = imageSrc;
+  lightbox.classList.add("active");
 }
 
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  lightbox.classList.remove("active");
+}
+
+/* 🔽 ZOOM SEGURO */
 document.addEventListener("DOMContentLoaded", () => {
   let scale = 1;
   const img = document.getElementById("lightbox-img");
@@ -222,9 +232,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     img.style.transform = `scale(${scale})`;
   });
+});
   
 </script>
-
+  
+</script>
 
 
 <div id="video-modal" class="modal">
