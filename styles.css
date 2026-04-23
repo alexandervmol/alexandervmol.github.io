@@ -420,3 +420,10 @@ button {
   color: #666;
   line-height: 1.6;
 }
+
+.cita {
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+  color: #555;
+  font-style: italic;
+}
