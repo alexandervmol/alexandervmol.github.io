@@ -137,7 +137,8 @@ margin-bottom: 40px;
 /* móvil */
 @media (max-width: 600px) {
   .art-grid-wrapper {
-    padding: 0 10px;
+    max-width: 100%;
+    padding: 0 5px;
   }
 }
 
