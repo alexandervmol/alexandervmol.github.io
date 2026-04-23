@@ -210,18 +210,18 @@ const lightbox = document.getElementById("lightbox");
 lightbox.classList.remove("active");
 }
 
-let scale = 1;
+document.addEventListener("DOMContentLoaded", () => {
+  let scale = 1;
+  const img = document.getElementById("lightbox-img");
 
-const img = document.getElementById("lightbox-img");
+  img.addEventListener("wheel", (e) => {
+    e.preventDefault();
 
-img.addEventListener("wheel", (e) => {
-  e.preventDefault();
+    scale += e.deltaY * -0.001;
+    scale = Math.min(Math.max(1, scale), 3);
 
-  scale += e.deltaY * -0.001;
-  scale = Math.min(Math.max(1, scale), 3);
-
-  img.style.transform = `scale(${scale})`;
-});
+    img.style.transform = `scale(${scale})`;
+  });
   
 </script>
 
