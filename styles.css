@@ -370,8 +370,8 @@ button {
 
 .mySwiper {
   width: 85%;
-  max-width: 900px;
-  height: 680px;
+  max-width: 700px;
+  height: 480px;
   margin: 50px auto;
   border-radius: 18px;
   overflow: hidden;
@@ -381,7 +381,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: contrast(1.05) saturate(1.05);
+  filter: brightness(0.95) contrast(1.05) saturate(0.25);
 }
 
 .swiper-pagination-bullet {
