@@ -133,7 +133,7 @@ color: #777;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 60px;
+  gap: 20px;
 }
 
 /* TEXTO A LA IZQUIERDA */
@@ -416,7 +416,7 @@ button {
 .descripcion-carrusel {
   text-align: center;
   margin-top: 15px;
-  font-size: 15px;
+  font-size: 14px;
   color: #666;
   line-height: 1.6;
 }
