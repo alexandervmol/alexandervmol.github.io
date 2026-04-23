@@ -207,6 +207,7 @@ color: #777;
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
+  font-size: 14px;
 }
 
 /* TEXTO A LA IZQUIERDA */
