@@ -555,3 +555,6 @@ button {
     width: 100%;
   }
 }
+.section h2 {
+  margin-bottom: 40px;
+}
