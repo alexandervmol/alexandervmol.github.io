@@ -520,3 +520,25 @@ button {
     font-size: 28px; 
   }
 }
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-content .text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-content .image {
+  flex: 1;
+}
+
+.about-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
