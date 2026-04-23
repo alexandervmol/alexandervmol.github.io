@@ -240,6 +240,10 @@ function closeVideo() {
   player.pause();
 }
 </script>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+  <img id="lightbox-img" src="" onclick="event.stopPropagation()">
+</div>
   
 </body>
 </html>
