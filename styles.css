@@ -114,10 +114,11 @@ font-size: 14px;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 
-  max-width: 1000px;   
-  margin: 0 auto; 
-
-   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
 /* Tablet */
@@ -563,7 +564,7 @@ button {
 
 .art-piece {
   overflow: hidden;
-  transform: translate3d(0,0,0);
+  transform: translateZ(0);
   backface-visibility: hidden;
 }
 
