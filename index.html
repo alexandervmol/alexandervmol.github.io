@@ -209,7 +209,6 @@ function closeLightbox() {
 const lightbox = document.getElementById("lightbox");
 lightbox.classList.remove("active");
 }
-</script>
 
 let scale = 1;
 
@@ -223,6 +222,10 @@ img.addEventListener("wheel", (e) => {
 
   img.style.transform = `scale(${scale})`;
 });
+  
+</script>
+
+
 
 <div id="video-modal" class="modal">
   <span class="close" onclick="closeVideo()">&times;</span>
