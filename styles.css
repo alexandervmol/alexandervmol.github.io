@@ -100,10 +100,11 @@ font-size: 14px;
 /* Mobile */
 @media (max-width: 600px) {
   .art-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 }
+
 .art-group-title {
 grid-column: 1 / -1;
 margin-top: 50px;
