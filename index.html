@@ -217,23 +217,7 @@ function openLightbox(imageSrc) {
 function closeLightbox() {
   const lightbox = document.getElementById("lightbox");
   lightbox.classList.remove("active");
-}
-
-/* 🔽 ZOOM SEGURO */
-document.addEventListener("DOMContentLoaded", () => {
-  let scale = 1;
-  const img = document.getElementById("lightbox-img");
-
-  img.addEventListener("wheel", (e) => {
-    e.preventDefault();
-
-    scale += e.deltaY * -0.001;
-    scale = Math.min(Math.max(1, scale), 3);
-
-    img.style.transform = `scale(${scale})`;
-  });
-});
-  
+}  
 </script>
   
 </script>
