@@ -55,7 +55,7 @@ margin-top: 10px;
 /* SECTIONS */
 .section {
 padding: 140px 60px;
-margin-top: 60px;  
+margin-top: 160px;  
 }
 
 .narrow {
@@ -424,6 +424,5 @@ button {
 
 .cita {
   max-width: 600px;
-  margin: 0 auto;
-  color: darkgrey;
+  margin: 20px 0;
 }
