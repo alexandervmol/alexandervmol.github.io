@@ -422,7 +422,7 @@ button {
 }
 
 .cita {
-  border-left: 4px solid #333;
+  max-width: 600px;
+  margin: 20px auto;
   color: #555;
-  font-style: italic;
 }
