@@ -341,3 +341,17 @@ button {
 .video-piece:hover::after {
   transform: translate(-50%, -50%) scale(1.2);
 }
+
+.mySwiper {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
