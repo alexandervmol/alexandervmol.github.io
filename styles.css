@@ -507,3 +507,9 @@ button {
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    white-space: nowrap;
+  }
+}
