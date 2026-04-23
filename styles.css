@@ -407,10 +407,16 @@ button {
   pointer-events: none;
 }
 
-.descripcion-carrusel {
-  display: block;
-  max-width: 1000px;
+.seccion-carrusel {
   width: 85%;
-  margin: 20px auto 0 !important;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.descripcion-carrusel {
   text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
 }
