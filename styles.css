@@ -684,3 +684,21 @@ button {
 .lightbox.active .lightbox-content {
   transform: scale(1);
 }
+
+@media (min-width: 769px) {
+  .lightbox-content {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+
+  .lightbox-content img {
+    max-width: 55vw;
+    max-height: 75vh;
+  }
+
+  .lightbox-info {
+    max-width: 300px;
+    max-height: 75vh;
+    overflow-y: auto;
+  }
+}
