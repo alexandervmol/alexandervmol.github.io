@@ -308,14 +308,19 @@ function closeVideo() {
   modal.style.display = "none";
   player.pause();
 }
-</script>
 
-<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
-  <img id="lightbox-img" src="" onclick="event.stopPropagation()">
+  <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    
+    <img id="lightbox-img" src="">
+    
+    <div class="lightbox-info">
+      <h2 id="lightbox-title"></h2>
+      <p id="lightbox-description"></p>
+    </div>
+
+  </div>
 </div>
-
-  
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
   const swiper = new Swiper(".mySwiper", {
