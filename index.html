@@ -124,7 +124,7 @@ Anthropic, 2022 - 2026
 <div class="art-piece"
      data-img="Anthropic13.jpg"
      data-title="Anthropic #13, 2025"
-     data-desc="Aquí va la descripción"
+     data-desc="Descripción aquí"
      onclick="openLightbox(this)">
      
   <img src="Anthropic13.jpg" alt="TEXTO">
@@ -278,8 +278,6 @@ function openLightbox(el) {
   const title = document.getElementById("lightbox-title");
   const desc = document.getElementById("lightbox-description");
 
-  if (!lightbox || !img) return;
-
   img.src = el.dataset.img;
   title.innerText = el.dataset.title || "";
   desc.innerText = el.dataset.desc || "";
@@ -337,7 +335,7 @@ function closeVideo() {
 
   </div>
 </div>
-
+  
 <script>
   const swiper = new Swiper(".mySwiper", {
     loop: true,
