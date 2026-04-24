@@ -118,6 +118,7 @@ font-size: 14px;
 }
 
 .art-piece {
+  position: relative;
   overflow: hidden;
   aspect-ratio: 1 / 1;
   contain: layout paint;
