@@ -129,7 +129,7 @@ Anthropic, 2022 - 2026
      
   <img src="Anthropic13.jpg" alt="TEXTO">
   <span>Anthropic #13, 2025</span>
-</div>  
+</div>
 
 <div class="art-piece" onclick="openLightbox('Winged Victory.jpg')">
   <img src="Winged Victory.jpg" alt="TEXTO">
@@ -266,14 +266,12 @@ He is a painter graduated from the Academia Profesional de Artes Visuales ALBA i
 </footer>
 
 <script>
-function openLightbox(src, title, description) {
+function openLightbox(el) {
   const lightbox = document.getElementById("lightbox");
 
-  if (!lightbox) return;
-
-  document.getElementById("lightbox-img").src = src;
-  document.getElementById("lightbox-title").innerText = title || "";
-  document.getElementById("lightbox-description").innerText = description || "";
+  document.getElementById("lightbox-img").src = el.dataset.img;
+  document.getElementById("lightbox-title").innerText = el.dataset.title || "";
+  document.getElementById("lightbox-description").innerText = el.dataset.desc || "";
 
   lightbox.classList.add("active");
 }
