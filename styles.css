@@ -607,9 +607,9 @@ button {
 .lightbox-content {
   display: flex;
   gap: 30px;
+  align-items: center;
   max-width: 90%;
   max-height: 90%;
-  align-items: center;
 }
 
 .lightbox-content img {
@@ -620,13 +620,5 @@ button {
 
 .lightbox-info {
   color: white;
-  max-width: 400px;
-}
-
-.lightbox-info h2 {
-  margin-bottom: 10px;
-}
-
-.lightbox-info p {
-  line-height: 1.5;
+  max-width: 300px;
 }
