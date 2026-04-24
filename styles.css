@@ -619,24 +619,5 @@ button {
 }
 
 .lightbox.active {
-  display: flex;
-}
-
-.lightbox-content {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.lightbox-content img {
-  max-width: 60%;
-  max-height: 80vh;
-  object-fit: contain;
-}
-
-.lightbox-info {
-  color: white;
-  max-width: 300px;
+  display: flex !important;
 }
