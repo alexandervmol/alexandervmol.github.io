@@ -602,3 +602,31 @@ button {
   object-fit: cover;
   display: block;
 }
+
+
+.lightbox-content {
+  display: flex;
+  gap: 30px;
+  max-width: 90%;
+  max-height: 90%;
+  align-items: center;
+}
+
+.lightbox-content img {
+  max-width: 60%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.lightbox-info {
+  color: white;
+  max-width: 400px;
+}
+
+.lightbox-info h2 {
+  margin-bottom: 10px;
+}
+
+.lightbox-info p {
+  line-height: 1.5;
+}
