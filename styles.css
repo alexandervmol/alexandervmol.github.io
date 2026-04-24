@@ -607,16 +607,20 @@ button {
 .lightbox {
   display: none;
   position: fixed;
-  z-index: 999;
   inset: 0;
+  z-index: 999;
   background: rgba(0,0,0,0.92);
 
   justify-content: center;
   align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .lightbox.active {
   display: flex;
+  opacity: 1;
 }
 
 .lightbox-content {
@@ -624,18 +628,12 @@ button {
   gap: 30px;
   align-items: center;
 
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
   max-width: 90vw;
   max-height: 85vh;
 }
 
-.lightbox-content img {
-  max-width: 55vw;
-  max-height: 80vh;
-  object-fit: contain;
-}
-
-.lightbox-info {
-  color: white;
-  max-width: 300px;
-  overflow: auto;
+.lightbox.active .lightbox-content {
+  transform: scale(1);
 }
