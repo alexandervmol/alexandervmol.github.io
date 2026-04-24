@@ -273,19 +273,23 @@ He is a painter graduated from the Academia Profesional de Artes Visuales ALBA i
 <script>
 function openLightbox(el) {
   const lightbox = document.getElementById("lightbox");
+
   const img = document.getElementById("lightbox-img");
+  const title = document.getElementById("lightbox-title");
+  const desc = document.getElementById("lightbox-description");
 
-  if (!lightbox || !img) {
-    console.error("Falta lightbox o imagen");
-    return;
-  }
+  if (!lightbox || !img) return;
 
-  img.src = el.getAttribute("data-img");
+  img.src = el.dataset.img;
+  title.innerText = el.dataset.title || "";
+  desc.innerText = el.dataset.desc || "";
+
   lightbox.classList.add("active");
 }
 
 function closeLightbox(e) {
   const lightbox = document.getElementById("lightbox");
+
   if (!e || e.target.id === "lightbox") {
     lightbox.classList.remove("active");
   }
