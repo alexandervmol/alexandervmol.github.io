@@ -131,10 +131,7 @@ Anthropic, 2022 - 2026
   <span>Anthropic #13, 2025</span>
 </div>
 
-<div class="art-piece" onclick="alert('click funciona')">
-  <img src="Anthropic13.jpg">
-  <span>Test</span>
-</div>  
+
   
 <div class="art-piece" onclick="openLightbox('Winged Victory.jpg')">
   <img src="Winged Victory.jpg" alt="TEXTO">
@@ -306,6 +303,7 @@ function openLightbox(el) {
 
 function closeLightbox(e) {
   const lightbox = document.getElementById("lightbox");
+
   if (!e || e.target.id === "lightbox") {
     lightbox.classList.remove("active");
   }
