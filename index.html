@@ -261,13 +261,15 @@ He is a painter graduated from the Academia Profesional de Artes Visuales ALBA i
 </footer>
 
 <script>
-function openLightbox(imageSrc) {
+function openLightbox(src, title, description) {
   const lightbox = document.getElementById("lightbox");
-  const img = document.getElementById("lightbox-img");
 
-  if (!lightbox || !img) return;
+  if (!lightbox) return;
 
-  img.src = imageSrc;
+  document.getElementById("lightbox-img").src = src;
+  document.getElementById("lightbox-title").innerText = title || "";
+  document.getElementById("lightbox-description").innerText = description || "";
+
   lightbox.classList.add("active");
 }
 
