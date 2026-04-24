@@ -177,9 +177,11 @@ font-size: 12px;
 
 /* PIEZAS */
 .art-piece {
-  aspect-ratio: 3 / 4;   
+  aspect-ratio: 3 / 4;
   position: relative;
   overflow: hidden;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .art-piece img {
