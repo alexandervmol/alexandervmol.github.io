@@ -780,7 +780,9 @@ button {
 
   .mySwiper {
     width: 50%;
-    height: 600px;
+    max-width: 500px;
+    height: 70vh; 
+    max-height: 600px;
   }
 
   .descripcion-carrusel {
