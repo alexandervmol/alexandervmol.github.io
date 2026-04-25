@@ -702,8 +702,9 @@ button {
 /* BOTÓN CERRAR */
 .close-btn {
   position: absolute;
-  top: 20px;
+  top: 70px; /* fallback por seguridad */
   right: 30px;
+
   background: none;
   border: none;
   color: white;
@@ -712,6 +713,20 @@ button {
   z-index: 1001;
 }
 
+/* PC */
+@media (min-width: 769px) {
+  .close-btn {
+    top: 80px;
+  }
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+  .close-btn {
+    top: 60px;
+    font-size: 28px;
+  }
+}
 /* =========================
    MÓVIL (TIPO MUSEO)
 ========================= */
