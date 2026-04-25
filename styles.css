@@ -702,3 +702,8 @@ button {
     overflow-y: auto;
   }
 }
+
+.lightbox-info h2,
+.lightbox-info p {
+  color: white;
+}
