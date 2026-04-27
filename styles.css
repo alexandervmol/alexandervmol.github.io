@@ -818,13 +818,13 @@ button {
 
 @media (max-width: 768px) {
   .logo img {
-    height: 18px;
+    height: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .social-icon {
-    font-size: 14px; /* más pequeño en móvil */
+    font-size: 12px; /* más pequeño en móvil */
     margin-left: 12px; /* opcional: reduce separación */
   }
 }
