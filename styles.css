@@ -16,9 +16,9 @@ background: #fff;
 }
 
 .nav-inner {
-display: flex;
-justify-content: space-between;
-padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
 }
 
 .logo {
@@ -51,8 +51,9 @@ padding: 20px 50px;
 .menu {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap; /* clave para responsive natural */
+  margin-left: auto;
 }
+
 
 .menu a {
   text-decoration: none;
@@ -286,15 +287,14 @@ color: #777;
 /* Estilo base (común) */
 .social-icon {
   color: #111;
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
   transition: 0.3s ease;
-}
 
-/* 🔹 Banner (NO centrado) */
-.banner-icon {
-  display: inline-block; 
-  margin: 0;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 /* 🔹 Contacto (centrado) */
