@@ -297,6 +297,10 @@ color: #777;
   flex-shrink: 0;
 }
 
+.social-icon:hover {
+  opacity: 0.6;
+}
+
 /* 🔹 Contacto (centrado) */
 .contact-icon {
   display: block;
