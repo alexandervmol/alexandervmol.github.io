@@ -806,3 +806,13 @@ button {
     margin-top: 0;
   }
 }
+
+.logo img {
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 22px;
+  }
+}
