@@ -704,6 +704,22 @@ button {
   opacity: 0.85;
 }
 
+
+.lightbox-info .divider {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 10px 0;
+
+  opacity: 0;
+  animation: fadeLine 0.6s ease forwards;
+}
+
+@keyframes fadeLine {
+  to { opacity: 1; }
+}
+
+
 /* =========================
    NAVEGACIÓN
 ========================= */
