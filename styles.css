@@ -22,8 +22,8 @@ padding: 20px 50px;
 }
 
 .logo {
-font-family: 'Inter', Arial, sans-serif;
-font-size: 16px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -31,6 +31,20 @@ font-size: 16px;
     white-space: nowrap;
     flex-shrink: 0;
   }
+}
+
+/* 👇 AÑADE esto */
+.logo img {
+  height: 20px; /* ajusta aquí */
+  width: auto;
+  display: block;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* MENÚ (DESKTOP) */
