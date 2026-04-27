@@ -821,3 +821,10 @@ button {
     height: 18px;
   }
 }
+
+@media (max-width: 768px) {
+  .social-icon {
+    font-size: 14px; /* más pequeño en móvil */
+    margin-left: 12px; /* opcional: reduce separación */
+  }
+}
