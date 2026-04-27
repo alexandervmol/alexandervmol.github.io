@@ -395,7 +395,7 @@ function showLightbox(el) {
 
   const parts = (el.dataset.desc || "").split("||");
 
-  desc.innerHTML = parts[0] + (parts[1] ? "<br>" + parts[1] : "");
+  desc.innerHTML = parts[0] + (parts[1] ? "<hr class='divider'>" + parts[1] : "");
 }
 
 function nextImage() {
