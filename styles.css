@@ -35,7 +35,7 @@ padding: 20px 50px;
 
 /* 👇 AÑADE esto */
 .logo img {
-  height: 20px; /* ajusta aquí */
+  height: 40px; /* ajusta aquí */
   width: auto;
   display: block;
 }
