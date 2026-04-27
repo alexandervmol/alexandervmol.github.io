@@ -376,13 +376,6 @@ function initGallery() {
 }
 
   
-const parts = el.dataset.desc.split("||");
-
-document.getElementById("lightbox-desc").innerHTML =
-  parts[0] + "<br>" + parts[1];
-
-
-  
 function openLightbox(el) {
   initGallery();
 
@@ -399,7 +392,10 @@ function showLightbox(el) {
 
   img.src = el.dataset.img;
   title.innerText = el.dataset.title || "";
-  desc.innerText = el.dataset.desc || "";
+
+  const parts = (el.dataset.desc || "").split("||");
+
+  desc.innerHTML = parts[0] + (parts[1] ? "<br>" + parts[1] : "");
 }
 
 function nextImage() {
@@ -478,7 +474,7 @@ function closeVideo() {
     grabCursor: true,
   });
 </script>
-  
+
   
 </body>
 </html>
