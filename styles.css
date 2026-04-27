@@ -19,6 +19,7 @@ background: #fff;
   display: flex;
   align-items: center;
   padding: 20px 50px;
+  gap: 20px;
 }
 
 .logo {
