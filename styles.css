@@ -102,15 +102,15 @@ position:relative;
 
 h1{
 
-font-size:clamp(56px,7vw,104px);
+font-size:clamp(42px,5vw,72px);
 
 font-weight:400;
 
-letter-spacing:-3px;
+letter-spacing:-2px;
 
-line-height:.95;
+line-height:1;
 
-max-width:10ch;
+max-width:11ch;
 
 }
 
