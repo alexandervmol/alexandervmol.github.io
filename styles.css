@@ -102,9 +102,9 @@ position:relative;
 
 h1{
 
-font-size:clamp(42px,5vw,72px);
+font-size:clamp(30px,5vw,62px);
 
-font-weight:300;
+font-weight:400;
 
 letter-spacing:-2px;
 
