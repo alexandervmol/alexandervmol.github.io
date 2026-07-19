@@ -116,15 +116,15 @@ max-width:18ch;
 
 h2{
 
-font-size:clamp(28px,3vw,44px);
+    font-size:clamp(28px,3vw,44px);
 
-font-weight:400;
+    font-weight:400;
 
-letter-spacing:-1px;
+    letter-spacing:-0.02em;
 
-line-height:1.15;
-   
-max-width:18ch;
+    line-height:1.15;
+
+    max-width:28ch;
 
 }
 
