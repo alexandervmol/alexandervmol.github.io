@@ -244,3 +244,27 @@ gsap.utils.toArray(".art-piece img").forEach(image=>{
 
 });
 
+
+// =====================================================
+// RECENT EXHIBITION SLIDER
+// =====================================================
+
+const swiper = new Swiper(".mySwiper",{
+
+    loop:true,
+
+    speed:1800,
+
+    effect:"fade",
+
+    fadeEffect:{
+        crossFade:true
+    },
+
+    autoplay:{
+        delay:4000,
+        disableOnInteraction:false
+    }
+
+});
+
