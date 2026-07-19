@@ -702,7 +702,7 @@ filter .8s;
 
 padding:240px 7vw;
 
-background:#fafafa;
+background:white;
 
 }
 
@@ -716,7 +716,7 @@ display:grid;
 
 grid-template-columns:180px minmax(650px,760px) 480px;
 
-gap:90px;
+gap:70px;
 
 align-items:start;
 
@@ -767,9 +767,19 @@ margin-bottom:0;
 }
 
 
+.biography-image{
+
+display:flex;
+
+align-items:flex-start;
+
+}
+
 .biography-image img{
 
 width:100%;
+
+max-width:460px;
 
 height:auto;
 
