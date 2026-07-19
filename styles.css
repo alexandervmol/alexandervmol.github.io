@@ -352,19 +352,20 @@ padding:0 7vw 220px;
 
 .featured-grid{
 
-max-width:1700px;
+max-width:1500px;
 
 margin:auto;
 
 display:grid;
 
-grid-template-columns:1.4fr .9fr;
+grid-template-columns:1.2fr .8fr;
 
-gap:90px;
+gap:80px;
 
 align-items:center;
 
 }
+
 
 .featured-image{
 
