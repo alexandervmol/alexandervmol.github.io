@@ -1201,6 +1201,58 @@ padding:120px 25px;
 
 }
 
+/* ===========================
+   RECENT EXHIBITION
+=========================== */
+
+.featured-grid{
+
+grid-template-columns:1fr;
+
+gap:35px;
+
+}
+
+.featured-image{
+
+width:100%;
+
+}
+
+.featured-image img{
+
+width:100%;
+
+height:auto;
+
+}
+
+.featured-text{
+
+width:100%;
+
+}
+
+.featured-text h2{
+
+font-size:clamp(30px,7vw,40px);
+
+margin-bottom:22px;
+
+}
+
+.featured-text p{
+
+font-size:16px;
+
+line-height:1.75;
+
+margin-bottom:18px;
+
+}
+
+/* =========================== */
+
 .gallery.two-columns,
 .gallery.three-columns{
 
@@ -1234,7 +1286,6 @@ gap:20px;
 
 }
 
-
 .biography-title{
 
 position:static;
@@ -1266,7 +1317,6 @@ max-width:420px;
 width:100%;
 
 }
-
 
 .hero h1{
 
