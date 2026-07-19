@@ -980,11 +980,31 @@ flex-direction:column;
 
 }
 
+.lightbox-series{
+
+font-size:11px;
+
+letter-spacing:.28em;
+
+text-transform:uppercase;
+
+color:#888;
+
+margin-bottom:10px;
+
+}
+
 .lightbox-sidebar h2{
 
-margin:20px 0;
+margin:8px 0 24px;
 
-font-size:36px;
+font-size:34px;
+
+font-weight:400;
+
+letter-spacing:-0.02em;
+
+line-height:1.1;
 
 }
 
@@ -993,6 +1013,7 @@ font-size:36px;
 margin-bottom:18px;
 
 }
+
 
 .close-btn{
 
