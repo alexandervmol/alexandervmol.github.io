@@ -125,15 +125,25 @@ pieces.forEach((piece,index)=>{
 
 function openLightbox(){
 
-    const piece=pieces[currentIndex];
+    const piece = pieces[currentIndex];
 
-    const img=piece.querySelector("img");
+    const img = piece.querySelector("img");
 
-    lightboxImg.src=img.src;
+    lightboxImg.src = img.src;
 
-    lightboxTitle.textContent=img.alt;
+    lightboxTitle.textContent = piece.dataset.title || img.alt;
 
-    lightboxDescription.innerHTML=piece.dataset.desc || "";
+    document.getElementById("lightbox-medium").textContent =
+    piece.dataset.medium || "";
+
+    document.getElementById("lightbox-size").textContent =
+    piece.dataset.size || "";
+
+    document.getElementById("lightbox-year").textContent =
+    piece.dataset.year || "";
+
+    document.getElementById("lightbox-description").textContent =
+    piece.dataset.description || "";
 
     lightbox.classList.add("active");
 
