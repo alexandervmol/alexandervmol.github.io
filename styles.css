@@ -1237,4 +1237,58 @@ padding-bottom:40px;
 
 }
 
+} 
+
+/* =========================================================
+   LIGHTBOX MOBILE
+========================================================= */
+
+@media (max-width: 900px){
+
+    .lightbox{
+
+        overflow-y:auto;
+
+        align-items:flex-start;
+
+        padding:70px 20px 40px;
+
+    }
+
+    .lightbox-wrapper{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:35px;
+
+        width:100%;
+
+    }
+
+    .lightbox-image{
+
+        width:100%;
+
+    }
+
+    .lightbox-image img{
+
+        max-height:65vh;
+
+        width:100%;
+
+        object-fit:contain;
+
+    }
+
+    .lightbox-sidebar{
+
+        width:100%;
+
+        padding:0;
+
+    }
+
 }
