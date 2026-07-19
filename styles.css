@@ -708,15 +708,17 @@ background:white;
 
 .biography-grid{
 
-max-width:1600px;
+max-width:1500px;
 
 margin:auto;
 
 display:grid;
 
-grid-template-columns:180px 1.35fr 1fr;
+grid-template-columns:160px minmax(520px,700px) minmax(380px,460px);
 
-gap:70px;
+justify-content:space-between;
+
+gap:80px;
 
 align-items:start;
 
