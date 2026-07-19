@@ -129,7 +129,7 @@ function openLightbox(){
 
     const img = piece.querySelector("img");
 
-    lightboxImg.src = img.src;
+    lightboxImg.src = piece.dataset.img || img.src;
 
     lightboxTitle.textContent = piece.dataset.title || img.alt;
 
