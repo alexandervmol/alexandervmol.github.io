@@ -1174,39 +1174,8 @@ transform:translateY(40px);
 
 }
 
-/*=========================================================
-RESPONSIVE
-=========================================================*/
 
-@media(max-width:1200px){
 
-.featured-grid{
-
-grid-template-columns:1fr;
-
-gap:70px;
-
-}
-
-.biography-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.lightbox-wrapper{
-
-grid-template-columns:1fr;
-
-}
-
-nav{
-
-gap:25px;
-
-}
-
-}
 
 @media(max-width:900px){
 
@@ -1263,6 +1232,40 @@ gap:20px;
 
 }
 
+
+.biography-title{
+
+position:static;
+
+top:auto;
+
+margin-bottom:30px;
+
+}
+
+.biography-grid{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+.biography-image{
+
+justify-content:flex-start;
+
+}
+
+.biography-image img{
+
+max-width:420px;
+
+width:100%;
+
+}
+
+
 .hero h1{
 
 font-size:58px;
@@ -1276,40 +1279,6 @@ font-size:22px;
 }
 
 }
-
-@media(max-width:640px){
-
-nav{
-
-display:none;
-
-}
-
-.hero{
-
-min-height:80vh;
-
-}
-
-.hero-description{
-
-font-size:18px;
-
-}
-
-.biography-text p{
-
-font-size:17px;
-
-}
-
-.lightbox-sidebar{
-
-padding-bottom:40px;
-
-}
-
-} 
 
 /* =========================================================
    LIGHTBOX MOBILE
@@ -1374,6 +1343,60 @@ padding-bottom:40px;
         top:20px;
 
         right:20px;
+
+    }
+
+}
+
+/*=========================================================
+MOBILE FIXES
+=========================================================*/
+
+@media (max-width:640px){
+
+    /* Desactiva el efecto sticky de Biography */
+
+    .biography-title{
+
+        position:static;
+
+        top:auto;
+
+        margin-bottom:24px;
+
+    }
+
+    /* El texto ocupa todo el ancho */
+
+    .biography-text{
+
+        max-width:100%;
+
+    }
+
+    .biography-text p{
+
+        max-width:none;
+
+        font-size:17px;
+
+        line-height:1.8;
+
+    }
+
+    /* La imagen no sobresale */
+
+    .biography-image{
+
+        justify-content:center;
+
+    }
+
+    .biography-image img{
+
+        width:100%;
+
+        max-width:360px;
 
     }
 
