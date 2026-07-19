@@ -131,6 +131,9 @@ function openLightbox(){
 
     lightboxImg.src = piece.dataset.img || img.src;
 
+    document.getElementById("lightbox-series").textContent =
+piece.dataset.series || "";
+
     lightboxTitle.textContent = piece.dataset.title || img.alt;
 
     document.getElementById("lightbox-medium").textContent =
