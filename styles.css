@@ -714,7 +714,7 @@ margin:auto;
 
 display:grid;
 
-grid-template-columns:220px 1fr 480px;
+grid-template-columns:180px minmax(650px,760px) 480px;
 
 gap:90px;
 
@@ -742,13 +742,30 @@ color:#777;
 
 }
 
+.biography-text{
+
+max-width:760px;
+
+}
+
 .biography-text p{
 
 font-size:16px;
 
-line-height:1.9;
+line-height:1.82;
+
+max-width:none;
+
+margin-bottom:26px;
 
 }
+
+.biography-text p:last-child{
+
+margin-bottom:0;
+
+}
+
 
 .biography-image img{
 
