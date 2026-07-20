@@ -249,31 +249,21 @@ gsap.utils.toArray(".art-piece img").forEach(image=>{
 // RECENT EXHIBITION SLIDER
 // =====================================================
 
-const exhibitionSwiper = new Swiper(".exhibitionSwiper", {
+const swiper = new Swiper(".exhibitionSwiper",{
 
-    loop: true,
+    loop:true,
 
-    speed: 1800,
+    speed:1400,
 
-    effect: "fade",
-
-    fadeEffect: {
-        crossFade: true
+    autoplay:{
+        delay:3500,
+        disableOnInteraction:false
     },
 
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false
-    },
+    effect:"fade",
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    },
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+    fadeEffect:{
+        crossFade:true
     }
 
 });
