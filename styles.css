@@ -369,41 +369,42 @@ align-items:center;
 
 .featured-image{
 
-width:100%;
+    width:100%;
+    max-width:900px;
 
-overflow:hidden;
+    aspect-ratio:4/3;
+
+    overflow:hidden;
 
 }
 
 .exhibitionSwiper{
 
-    width:60%;
+    width:100%;
+    height:100%;
 
-    height:70%;
+}
+
+.exhibitionSwiper .swiper-wrapper{
+
+    height:100%;
 
 }
 
 .exhibitionSwiper .swiper-slide{
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    height:100%;
 
 }
 
 .exhibitionSwiper img{
 
     width:100%;
-
-    height:auto;
-
-    display:block;
+    height:100%;
 
     object-fit:cover;
 
-    transition:transform 8s ease;
+    display:block;
 
 }
 
@@ -1246,6 +1247,157 @@ padding:0 25px;
 .biography{
 
 padding:120px 25px;
+
+}
+
+@media(max-width:900px){
+
+.header-inner{
+    padding:25px;
+}
+
+.hero{
+    padding:0 25px;
+}
+
+.works,
+.contact,
+.biography{
+    padding:120px 25px;
+}
+
+/*=========================================================
+RECENT EXHIBITION
+=========================================================*/
+
+.featured-exhibition{
+
+    padding:160px 7vw 220px;
+
+}
+
+.featured-grid{
+
+    max-width:1600px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1.45fr .85fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.featured-image{
+
+    width:100%;
+
+}
+
+.exhibitionSwiper{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    overflow:hidden;
+
+}
+
+.exhibitionSwiper .swiper-wrapper{
+
+    height:100%;
+
+}
+
+.exhibitionSwiper .swiper-slide{
+
+    height:100%;
+
+}
+
+.exhibitionSwiper img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.featured-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    max-width:470px;
+
+}
+
+.featured-text h2{
+
+    margin-bottom:34px;
+
+}
+
+.featured-text p{
+
+    font-size:17px;
+
+    line-height:1.85;
+
+    margin-bottom:22px;
+
+}
+
+.exhibitionSwiper .swiper-pagination{
+
+    bottom:18px !important;
+
+}
+
+.exhibitionSwiper .swiper-pagination-bullet{
+
+    width:8px;
+
+    height:8px;
+
+    background:white;
+
+    opacity:.45;
+
+}
+
+.exhibitionSwiper .swiper-pagination-bullet-active{
+
+    opacity:1;
+
+}
+   
+
+/* ========================== */
+
+.gallery.two-columns,
+.gallery.three-columns{
+    grid-template-columns:1fr;
+}
+
+.series-title{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
 
 }
 
