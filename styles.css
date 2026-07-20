@@ -370,8 +370,8 @@ align-items:center;
 .featured-image{
 
     width:100%;
-    max-width:900px;
-    height:700px;
+    max-width:800px;
+    height:650px;
     aspect-ratio:3/4;
 
     overflow:hidden;
