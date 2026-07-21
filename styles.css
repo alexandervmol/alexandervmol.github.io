@@ -1,172 +1,186 @@
-/* ===========================================================
+/* ==========================================================
    ALEXANDER V MOLINA
-   Editorial Gallery v2.0
-=========================================================== */
+   Contemporary Artist Portfolio
+   Version 3.0
+========================================================== */
+
+
+/* ==========================================================
+   ROOT
+========================================================== */
 
 :root{
 
---white:#ffffff;
---offwhite:#fafafa;
---black:#111111;
---gray:#6b6b6b;
---light:#d9d9d9;
+    --white:#ffffff;
+    --offwhite:#fafafa;
 
---font:"Instrument Sans",sans-serif;
+    --black:#111111;
+    --gray:#6b6b6b;
+    --light:#dddddd;
 
---max-width:1600px;
---content-width:1350px;
+    --font:"Instrument Sans",sans-serif;
 
---space-xs:12px;
---space-s:24px;
---space-m:48px;
---space-l:96px;
---space-xl:180px;
---space-xxl:280px;
+    --max-width:1700px;
+    --content-width:1500px;
 
---transition:.7s cubic-bezier(.22,.61,.36,1);
+    --space-xs:12px;
+    --space-s:24px;
+    --space-m:48px;
+    --space-l:96px;
+    --space-xl:180px;
+    --space-xxl:260px;
+
+    --transition:.55s cubic-bezier(.22,.61,.36,1);
 
 }
+
+
+/* ==========================================================
+   RESET
+========================================================== */
 
 *,
 *::before,
 *::after{
 
-box-sizing:border-box;
+    margin:0;
+    padding:0;
 
-margin:0;
-padding:0;
+    box-sizing:border-box;
 
 }
 
 html{
 
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 
 }
 
 body{
 
-font-family:var(--font);
+    font-family:var(--font);
 
-background:var(--white);
+    background:var(--white);
 
-color:var(--black);
+    color:var(--black);
 
-font-weight:300;
+    font-weight:300;
 
-line-height:1.7;
+    line-height:1.75;
 
--webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
 
-text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
 
-overflow-x:hidden;
+    text-rendering:optimizeLegibility;
 
 }
 
 img{
 
-display:block;
+    display:block;
 
-max-width:100%;
+    width:100%;
 
-height:auto;
+    height:auto;
 
 }
 
 a{
 
-text-decoration:none;
+    color:inherit;
 
-color:inherit;
+    text-decoration:none;
 
 }
 
 button{
 
-font:inherit;
+    font:inherit;
 
-background:none;
+    background:none;
 
-border:none;
+    border:none;
 
-cursor:pointer;
+    cursor:pointer;
 
 }
 
 section{
 
-position:relative;
+    position:relative;
 
 }
 
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
 h1{
 
-font-size:clamp(20px,5vw,42px);
+    font-size:clamp(58px,7vw,118px);
 
-font-weight:400;
+    font-weight:400;
 
-letter-spacing:-2px;
+    line-height:.95;
 
-line-height:1;
-
-max-width:18ch;
+    letter-spacing:-0.04em;
 
 }
 
 h2{
 
-    font-size:clamp(28px,3vw,44px);
+    font-size:clamp(34px,3.3vw,50px);
 
     font-weight:400;
 
-    letter-spacing:-0.02em;
+    line-height:1.1;
 
-    line-height:1.15;
-
-    max-width:none;
+    letter-spacing:-0.03em;
 
 }
 
 h3{
 
-font-size:28px;
+    font-size:30px;
 
-font-weight:400;
+    font-weight:400;
 
 }
 
 p{
 
-font-size:17px;
+    font-size:17px;
 
-color:var(--gray);
+    color:var(--gray);
 
-max-width:65ch;
+    line-height:1.85;
 
 }
 
 .section-label{
 
-font-size:11px;
+    font-size:11px;
 
-letter-spacing:.28em;
+    letter-spacing:.30em;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-margin-bottom:18px;
+    color:#777;
 
-color:#777;
+    margin-bottom:20px;
 
 }
 
-/*=========================================================
-HEADER
-=========================================================*/
+/* ==========================================================
+   HEADER
+========================================================== */
 
 .site-header{
 
     position:fixed;
+
     top:0;
     left:0;
 
@@ -174,33 +188,32 @@ HEADER
 
     z-index:1000;
 
-    background:rgba(255,255,255,.78);
+    background:rgba(255,255,255,.82);
 
-    backdrop-filter:blur(22px);
-    -webkit-backdrop-filter:blur(22px);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 
     border-bottom:1px solid rgba(0,0,0,.05);
 
     transition:
-        transform .55s ease,
-        background .45s ease,
-        border-color .45s ease;
+        transform .45s ease,
+        background .35s ease;
 
 }
 
 .header-inner{
 
-    max-width:1600px;
+    max-width:1700px;
 
-    margin:auto;
+    margin:0 auto;
 
-    padding:24px 48px;
+    padding:28px 56px;
 
     display:flex;
 
-    align-items:center;
-
     justify-content:space-between;
+
+    align-items:center;
 
 }
 
@@ -210,7 +223,9 @@ HEADER
 
     font-weight:500;
 
-    letter-spacing:.06em;
+    letter-spacing:.04em;
+
+    white-space:nowrap;
 
 }
 
@@ -236,10 +251,7 @@ HEADER
 
     text-transform:uppercase;
 
-    transition:opacity .3s ease;
-
 }
-
 
 .desktop-nav a::after{
 
@@ -271,7 +283,7 @@ HEADER
 
     font-size:18px;
 
-    transition:.35s;
+    transition:opacity .3s ease;
 
 }
 
@@ -281,9 +293,7 @@ HEADER
 
 }
 
-/*==========================
-MOBILE MENU
-==========================*/
+/* ---------- Menú móvil ---------- */
 
 .menu-toggle{
 
@@ -291,7 +301,7 @@ MOBILE MENU
 
     font-size:26px;
 
-    cursor:pointer;
+    color:#111;
 
 }
 
@@ -301,7 +311,7 @@ MOBILE MENU
 
     inset:0;
 
-    background:white;
+    background:#fff;
 
     display:flex;
 
@@ -315,7 +325,7 @@ MOBILE MENU
 
     transform:translateX(100%);
 
-    transition:.45s ease;
+    transition:transform .45s ease;
 
     z-index:999;
 
@@ -329,18 +339,17 @@ MOBILE MENU
 
 .mobile-menu a{
 
-    font-size:22px;
-
-    letter-spacing:.16em;
+    font-size:24px;
 
     text-transform:uppercase;
 
+    letter-spacing:.18em;
+
 }
 
-
-/*=========================================================
-HERO
-=========================================================*/
+/* ==========================================================
+   HERO
+========================================================== */
 
 .hero{
 
@@ -350,7 +359,7 @@ HERO
 
     align-items:center;
 
-    padding:0 8vw;
+    padding:0 7vw;
 
 }
 
@@ -358,90 +367,91 @@ HERO
 
     width:100%;
 
-    max-width:1500px;
+    max-width:1700px;
 
-    margin:auto;
+    margin:0 auto;
 
 }
 
 .hero-label{
 
+    margin-bottom:34px;
+
     font-size:12px;
 
-    letter-spacing:.28em;
+    letter-spacing:.30em;
 
     text-transform:uppercase;
 
     color:#777;
 
-    margin-bottom:34px;
-
 }
 
 .hero h1{
 
-    margin-bottom:42px;
+    max-width:9ch;
+
+    margin-bottom:44px;
 
 }
 
 .hero-description{
 
-    max-width:680px;
+    max-width:640px;
 
-    font-size:20px;
+    font-size:21px;
 
-    line-height:1.85;
+    line-height:1.9;
 
-    color:var(--gray);
+    color:#555;
 
 }
 
+/* ==========================================================
+   INTRO QUOTE
+========================================================== */
 
 .intro-quote{
 
-padding:250px 0;
-
-display:flex;
-
-justify-content:center;
+    padding:220px 7vw;
 
 }
 
 .intro-quote p{
 
-font-size:22px;
+    max-width:1050px;
 
-font-weight:300;
+    margin:auto;
 
-max-width:1050px;
+    text-align:center;
 
-line-height:1.45;
+    font-size:26px;
 
-text-align:center;
+    line-height:1.55;
 
-color:#222;
+    color:#222;
 
 }
 
-/*=========================================================
-RECENT EXHIBITION
-=========================================================*/
+/* ==========================================================
+   RECENT EXHIBITION
+========================================================== */
 
 .featured-exhibition{
 
-    padding:120px 7vw 100px;
+    padding:120px 7vw 140px;
 
 }
 
 .featured-grid{
 
-    max-width:1500px;
+    max-width:1600px;
 
-    margin:auto;
+    margin:0 auto;
 
     display:grid;
 
-    grid-template-columns:1.25fr .75fr;
+    grid-template-columns:minmax(0,1.35fr) minmax(360px,.65fr);
 
     gap:90px;
 
@@ -449,13 +459,13 @@ RECENT EXHIBITION
 
 }
 
-/*----------------------------------
-SLIDER
-----------------------------------*/
-
 .featured-image{
 
     width:100%;
+
+    max-width:860px;
+
+    margin:0 auto;
 
 }
 
@@ -463,7 +473,7 @@ SLIDER
 
     width:100%;
 
-    aspect-ratio:4/5;
+    aspect-ratio:4 / 5;
 
     overflow:hidden;
 
@@ -471,16 +481,11 @@ SLIDER
 
 }
 
-.exhibitionSwiper .swiper-wrapper{
-
-    width:100%;
-    height:100%;
-
-}
-
+.exhibitionSwiper .swiper-wrapper,
 .exhibitionSwiper .swiper-slide{
 
     width:100%;
+
     height:100%;
 
 }
@@ -488,13 +493,34 @@ SLIDER
 .exhibitionSwiper img{
 
     width:100%;
+
     height:100%;
 
     object-fit:cover;
 
-    object-position:center center;
+    object-position:center;
 
     display:block;
+
+}
+
+.featured-text{
+
+    max-width:430px;
+
+}
+
+.featured-text h2{
+
+    margin:24px 0 34px;
+
+}
+
+.featured-text p{
+
+    margin-bottom:22px;
+
+    line-height:1.85;
 
 }
 
@@ -510,9 +536,9 @@ SLIDER
 
     height:8px;
 
-    background:white;
-
     opacity:.45;
+
+    background:white;
 
 }
 
@@ -522,131 +548,29 @@ SLIDER
 
 }
 
-/*----------------------------------
-TEXT
-----------------------------------*/
-
-.featured-text{
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    max-width:470px;
-
-}
-
-.featured-text h2{
-
-    margin-bottom:30px;
-
-}
-
-.featured-text p{
-
-    font-size:17px;
-
-    line-height:1.85;
-
-    margin-bottom:22px;
-
-}
-
-/*=========================================================
-  WORKS
-=========================================================*/
+/* ==========================================================
+   WORKS
+========================================================== */
 
 .works{
 
-padding:50px 7vw;
+    padding:140px 7vw;
 
 }
 
 .section-heading{
 
-max-width:1600px;
+    max-width:1500px;
 
-margin:auto;
-
-margin-bottom:180px;
-
-}
-
-.section-heading p{
-
-font-size:12px;
-
-letter-spacing:.25em;
-
-text-transform:uppercase;
-
-margin-bottom:20px;
-
-color:#777;
-
-padding-bottom:20px;
-
-}
-
-.section-heading h2{
-
-max-width:9ch;
+    margin:0 auto 140px;
 
 }
 
 .series{
 
-max-width:1650px;
+    max-width:1500px;
 
-margin:auto;
-
-margin-bottom:220px;
-
-}
-
-.series:last-child{
-
-margin-bottom:0;
-
-}
-
-.series-title{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:flex-end;
-
-margin-bottom:70px;
-
-padding-bottom:24px;
-
-border-bottom:1px solid #e8e8e8;
-
-}
-
-.series-title span{
-
-font-size:13px;
-
-letter-spacing:.15em;
-
-text-transform:uppercase;
-
-color:#888;
-
-}
-
-.series-title h3{
-
-font-size:34px;
-
-font-weight:400;
-
-letter-spacing:-.5px;
+    margin:0 auto 220px;
 
 }
 
@@ -654,18 +578,15 @@ letter-spacing:-.5px;
 
     display:grid;
 
-    gap:44px;
+    gap:90px 70px;
 
     align-items:start;
 
 }
 
-
 .gallery.two-columns{
 
     grid-template-columns:repeat(2,minmax(0,1fr));
-
-    gap:44px;
 
 }
 
@@ -673,10 +594,7 @@ letter-spacing:-.5px;
 
     grid-template-columns:repeat(3,minmax(0,1fr));
 
-    gap:40px;
-
 }
-
 
 .art-piece{
 
@@ -684,18 +602,15 @@ letter-spacing:-.5px;
 
     flex-direction:column;
 
-    cursor:zoom-in;
+    cursor:pointer;
 
-    transition:
-        transform .45s ease,
-        opacity .45s ease;
+    transition:transform .45s ease;
 
 }
 
-
 .art-piece:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-6px);
 
 }
 
@@ -703,28 +618,17 @@ letter-spacing:-.5px;
 
     width:100%;
 
-    display:block;
-
     height:auto;
-
-    background:#fff;
 
     object-fit:contain;
 
-    transition:
-        transform .8s cubic-bezier(.22,.61,.36,1),
-        filter .5s ease;
-
-}
-
-
-.art-piece:hover img{
-
-transform:scale(1.015);
+    background:#fff;
 
 }
 
 .art-piece-info{
+
+    margin-top:18px;
 
     display:flex;
 
@@ -734,150 +638,77 @@ transform:scale(1.015);
 
     gap:18px;
 
-    padding-top:16px;
-
-    opacity:.78;
-
-    transition:opacity .35s ease;
-
 }
-
 
 .art-piece-info h4{
 
-font-weight:400;
+    font-size:17px;
 
-font-size:17px;
+    font-weight:400;
 
-margin-bottom:8px;
+    margin-bottom:6px;
 
 }
 
 .art-piece-info p{
 
-font-size:14px;
+    font-size:14px;
 
-color:#777;
+    color:#777;
 
 }
 
 .art-piece-year{
 
-font-size:13px;
+    font-size:13px;
 
-color:#888;
-
-}
-
-.featured-work{
-
-grid-column:span 2;
-
-}
-
-.art-piece img{
-
-filter:saturate(.98);
-
-}
-
-.art-piece:hover img{
-
-filter:saturate(1);
-
-}
-
-.art-piece-info{
-
-opacity:.72;
-
-transition:.5s;
-
-}
-
-.art-piece:hover .art-piece-info{
-
-    opacity:1;
-
-}
-
-.series+.series{
-
-padding-top:30px;
-
-}
-
-.gallery .art-piece:nth-child(even){
-
-margin-top:60px;
+    color:#888;
 
 }
 
 .vertical{
 
-    width:76%;
+    width:72%;
 
-    margin:auto;
+    margin:0 auto;
 
 }
 
 .horizontal{
 
-grid-column:span 2;
+    grid-column:span 2;
 
 }
 
 .hero-piece{
 
-grid-column:1/-1;
+    grid-column:1/-1;
 
 }
 
-.art-piece{
-
-opacity:0;
-
-transform:translateY(45px);
-
-}
-
-.art-piece{
-
-cursor:zoom-in;
-
-}
-
-.art-piece img{
-
-transition:
-
-transform 1.4s cubic-bezier(.22,.61,.36,1),
-
-filter .8s;
-
-}
-
-/*=========================================================
-  BIOGRAPHY
-=========================================================*/
+/* ==========================================================
+   BIOGRAPHY
+========================================================== */
 
 .biography{
 
-padding:240px 7vw;
+    padding:220px 7vw;
 
-background:white;
+    background:var(--white);
 
 }
 
 .biography-grid{
 
-    max-width:1500px;
+    max-width:1600px;
 
-    margin:auto;
+    margin:0 auto;
 
     display:grid;
 
-    grid-template-columns:160px 1.15fr .85fr;
+    grid-template-columns:140px minmax(620px,760px) minmax(320px,420px);
+
+    justify-content:space-between;
 
     gap:90px;
 
@@ -887,27 +718,27 @@ background:white;
 
 .biography-title{
 
-position:sticky;
+    position:sticky;
 
-top:140px;
+    top:140px;
 
 }
 
 .biography-title p{
 
-font-size:12px;
+    font-size:11px;
 
-letter-spacing:.25em;
+    letter-spacing:.30em;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-color:#777;
+    color:#777;
 
 }
 
 .biography-text{
 
-    max-width:680px;
+    max-width:none;
 
 }
 
@@ -921,22 +752,19 @@ color:#777;
 
     margin-bottom:28px;
 
-    max-width:none;
-
 }
 
 .biography-text p:last-child{
 
-margin-bottom:0;
+    margin-bottom:0;
 
 }
-
 
 .biography-image{
 
     display:flex;
 
-    justify-content:center;
+    justify-content:flex-end;
 
     align-items:flex-start;
 
@@ -948,749 +776,605 @@ margin-bottom:0;
 
     max-width:420px;
 
-    height:auto;
-
     display:block;
 
 }
 
-.biography-image img{
-
-    transition:transform .8s ease;
-
-}
-
-.biography-image:hover img{
-
-    transform:scale(1.015);
-
-}
-
-/*=========================================================
-  CONTACT
-=========================================================*/
+/* ==========================================================
+   CONTACT
+========================================================== */
 
 .contact{
 
-padding:220px 7vw;
+    padding:220px 7vw;
 
 }
 
 .contact-inner{
 
-max-width:900px;
+    max-width:900px;
 
-margin:auto;
+    margin:0 auto;
 
 }
 
 .contact h2{
 
-margin:25px 0 80px;
+    margin:24px 0 70px;
 
-max-width:12ch;
+    max-width:12ch;
 
 }
 
 .contact-links{
 
-display:flex;
+    display:flex;
 
-gap:50px;
+    gap:50px;
 
-margin-bottom:80px;
+    margin-bottom:70px;
 
 }
 
 .contact-links a{
 
-font-size:15px;
+    position:relative;
 
-position:relative;
+    font-size:15px;
+
+    transition:.3s;
 
 }
 
 .contact-links a::after{
 
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-left:0;
+    left:0;
 
-bottom:-6px;
+    bottom:-6px;
 
-width:0;
+    width:0;
 
-height:1px;
+    height:1px;
 
-background:#111;
+    background:#111;
 
-transition:.4s;
+    transition:.35s;
 
 }
 
 .contact-links a:hover::after{
 
-width:100%;
+    width:100%;
 
 }
 
 form{
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:28px;
+    gap:28px;
 
 }
 
 input,
 textarea{
 
-font-family:inherit;
+    width:100%;
 
-font-size:16px;
+    padding:20px 0;
 
-padding:22px 0;
+    border:none;
 
-border:none;
+    border-bottom:1px solid #ddd;
 
-border-bottom:1px solid #ddd;
+    background:none;
 
-background:none;
+    font-family:var(--font);
 
-outline:none;
+    font-size:16px;
 
-transition:.4s;
+    outline:none;
 
-}
-
-textarea{
-
-min-height:180px;
-
-resize:vertical;
+    transition:border-color .35s ease;
 
 }
 
 input:focus,
 textarea:focus{
 
-border-color:#111;
+    border-color:#111;
+
+}
+
+textarea{
+
+    min-height:180px;
+
+    resize:vertical;
 
 }
 
 button{
 
-align-self:flex-start;
+    margin-top:18px;
 
-padding:18px 42px;
+    padding:18px 42px;
 
-border:1px solid #111;
+    border:1px solid #111;
 
-font-size:13px;
+    background:white;
 
-letter-spacing:.18em;
+    color:#111;
 
-text-transform:uppercase;
+    font-size:13px;
 
-transition:.5s;
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    transition:.35s;
 
 }
 
 button:hover{
 
-background:#111;
+    background:#111;
 
-color:white;
+    color:white;
 
 }
 
-/*=========================================================
-LIGHTBOX
-=========================================================*/
+/* ==========================================================
+   LIGHTBOX
+========================================================== */
 
 .lightbox{
 
-position:fixed;
+    position:fixed;
 
-inset:0;
+    inset:0;
 
-background:white;
+    background:rgba(255,255,255,.98);
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-align-items:center;
+    align-items:center;
 
-opacity:0;
+    opacity:0;
 
-visibility:hidden;
+    visibility:hidden;
 
-transition:.5s;
+    transition:.35s ease;
 
-z-index:9999;
+    z-index:9999;
 
 }
 
 .lightbox.active{
 
-opacity:1;
+    opacity:1;
 
-visibility:visible;
+    visibility:visible;
 
 }
 
 .lightbox-wrapper{
 
-width:min(1700px,92vw);
+    width:min(1700px,92vw);
 
-display:grid;
+    display:grid;
 
-grid-template-columns:1.4fr .7fr;
+    grid-template-columns:1.45fr .65fr;
 
-gap:90px;
+    gap:90px;
 
-align-items:center;
+    align-items:center;
 
 }
 
 .lightbox-image{
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-align-items:center;
+    align-items:center;
 
 }
 
 .lightbox-image img{
 
-max-height:88vh;
+    width:auto;
 
-width:auto;
+    max-width:100%;
 
-max-width:100%;
+    max-height:88vh;
 
-}
-
-.lightbox-sidebar{
-
-display:flex;
-
-flex-direction:column;
-
-}
-
-.lightbox-series{
-
-font-size:11px;
-
-letter-spacing:.28em;
-
-text-transform:uppercase;
-
-color:#888;
-
-margin-bottom:10px;
-
-}
-
-.lightbox-sidebar h2{
-
-margin:8px 0 24px;
-
-font-size:34px;
-
-font-weight:400;
-
-letter-spacing:-0.02em;
-
-line-height:1.1;
-
-}
-
-.lightbox-sidebar p{
-
-margin-bottom:18px;
-
-}
-
-
-.close-btn{
-
-position:absolute;
-
-top:28px;
-
-right:32px;
-
-width:34px;
-
-height:34px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:18px;
-
-color:#666;
-
-transition:.3s;
-
-}
-
-.close-btn:hover{
-
-color:#111;
-
-transform:rotate(90deg);
+    object-fit:contain;
 
 }
 
 .lightbox-sidebar{
-
-display:flex;
-
-flex-direction:column;
-
-}
-
-.art-meta{
-
-margin:26px 0;
-
-}
-
-.art-meta p{
-
-font-size:14px;
-
-color:#777;
-
-margin-bottom:6px;
-
-line-height:1.6;
-
-}
-
-.lightbox-navigation{
-
-display:flex;
-
-justify-content:space-between;
-
-margin-top:50px;
-
-padding-top:25px;
-
-border-top:1px solid #e8e8e8;
-
-}
-
-.lightbox-navigation button{
-
-padding:0;
-
-border:none;
-
-background:none;
-
-font-size:12px;
-
-letter-spacing:.14em;
-
-text-transform:uppercase;
-
-color:#666;
-
-transition:.3s;
-
-}
-
-.lightbox-navigation button:hover{
-
-color:#111;
-
-}
-
-/*=========================================================
-FOOTER
-=========================================================*/
-
-footer{
-
-padding:60px;
-
-border-top:1px solid #eee;
-
-text-align:center;
-
-}
-
-footer p{
-
-font-size:13px;
-
-color:#888;
-
-margin:auto;
-
-}
-
-.fade{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-
-
-
-@media(max-width:900px){
-
-/* ==========================
-   HEADER
-========================== */
-
-.site-header{
-    backdrop-filter:blur(12px);
-}
-
-.header-inner{
-    padding:18px;
-    gap:18px;
-}
-
-.brand{
-    font-size:15px;
-    letter-spacing:.02em;
-    white-space:nowrap;
-}
-
-.desktop-nav{
-    display:none;
-}
-
-.menu-toggle{
-    display:block;
-}
-
-nav{
-    gap:14px;
-    flex-wrap:wrap;
-    justify-content:flex-end;
-}
-
-nav a{
-    font-size:10px;
-    letter-spacing:.12em;
-}
-
-/* ==========================
-   SECCIONES
-========================== */
-
-.hero{
-    padding:0 25px;
-}
-
-.works,
-.contact,
-.biography{
-    padding:120px 25px;
-}
-
-}
-/* ==========================
-   MENÚ MÓVIL
-========================== */
-
-.desktop-nav{
-    display:none;
-}
-
-.menu-toggle{
-    display:block;
-}
-
-.hero{
-    padding:0 25px;
-}
-
-.works,
-.contact,
-.biography{
-    padding:120px 25px;
-}
-
-
-}
-
-/*=========================================================
-RECENT EXHIBITION
-=========================================================*/
-
-.featured-exhibition{
-
-    padding:160px 7vw 220px;
-
-}
-
-.featured-image{
-
-    width:100%;
-
-}
-
-.exhibitionSwiper{
-
-    width:100%;
-
-    aspect-ratio:4/3;
-
-    overflow:hidden;
-
-}
-
-.exhibitionSwiper .swiper-wrapper{
-
-    height:100%;
-
-}
-
-.exhibitionSwiper .swiper-slide{
-
-    height:100%;
-
-}
-
-.exhibitionSwiper img{
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    display:block;
-
-}
-
-.featured-text{
 
     display:flex;
 
     flex-direction:column;
 
-    justify-content:center;
+}
 
-    max-width:470px;
+.lightbox-series{
+
+    font-size:11px;
+
+    letter-spacing:.30em;
+
+    text-transform:uppercase;
+
+    color:#888;
+
+    margin-bottom:12px;
 
 }
 
-.featured-text h2{
+.lightbox-sidebar h2{
+
+    margin-bottom:28px;
+
+}
+
+.art-meta{
 
     margin-bottom:34px;
 
 }
 
-.featured-text p{
+.art-meta p{
 
-    font-size:17px;
+    margin-bottom:8px;
 
-    line-height:1.85;
+    font-size:15px;
 
-    margin-bottom:22px;
-
-}
-
-.exhibitionSwiper .swiper-pagination{
-
-    bottom:18px !important;
+    color:#666;
 
 }
 
-.exhibitionSwiper .swiper-pagination-bullet{
+#lightbox-description{
 
-    width:8px;
+    line-height:1.9;
 
-    height:8px;
-
-    background:white;
-
-    opacity:.45;
+    color:#555;
 
 }
 
-.exhibitionSwiper .swiper-pagination-bullet-active{
+.lightbox-navigation{
 
-    opacity:1;
+    display:flex;
 
-}
-   
+    justify-content:space-between;
 
-/* ========================== */
+    margin-top:50px;
 
-.gallery.two-columns,
-.gallery.three-columns{
-    grid-template-columns:1fr;
-}
+    padding-top:26px;
 
-.series-title{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:10px;
-}
-
+    border-top:1px solid #ececec;
 
 }
 
-/* ===========================
-   RECENT EXHIBITION
-=========================== */
+.lightbox-navigation button{
 
-.featured-grid{
+    padding:0;
 
-grid-template-columns:1fr;
+    border:none;
 
-gap:35px;
+    background:none;
 
-}
+    font-size:12px;
 
-.featured-image{
+    letter-spacing:.18em;
 
-width:100%;
+    text-transform:uppercase;
 
 }
 
-.featured-image img{
+.lightbox-navigation button:hover{
 
-width:100%;
-
-height:auto;
+    opacity:.55;
 
 }
 
-.featured-text{
+.close-btn{
 
-width:100%;
+    position:absolute;
 
-}
+    top:32px;
 
-.featured-text h2{
+    right:36px;
 
-font-size:clamp(30px,7vw,40px);
+    width:42px;
 
-margin-bottom:22px;
+    height:42px;
 
-}
+    display:flex;
 
-.featured-text p{
+    justify-content:center;
 
-font-size:16px;
+    align-items:center;
 
-line-height:1.75;
+    font-size:24px;
 
-margin-bottom:18px;
+    color:#666;
 
-}
-
-/* =========================== */
-
-.gallery.two-columns,
-.gallery.three-columns{
-
-grid-template-columns:1fr;
+    transition:.35s;
 
 }
 
-.series-title{
+.close-btn:hover{
 
-flex-direction:column;
+    transform:rotate(90deg);
 
-align-items:flex-start;
-
-gap:10px;
+    color:#111;
 
 }
 
-.hero-piece,
-.horizontal,
-.featured-work{
+/* ==========================================================
+   FOOTER
+========================================================== */
 
-grid-column:auto;
+footer{
 
-}
+    padding:70px 7vw;
 
-.contact-links{
-
-flex-direction:column;
-
-gap:20px;
+    border-top:1px solid #ececec;
 
 }
 
-.biography-title{
+footer p{
 
-position:static;
+    text-align:center;
 
-top:auto;
+    font-size:13px;
 
-margin-bottom:30px;
-
-}
-
-.biography-grid{
-
-grid-template-columns:1fr;
-
-gap:40px;
+    color:#888;
 
 }
 
-.biography-image{
-
-justify-content:flex-start;
-
-}
-
-.biography-image img{
-
-max-width:420px;
-
-width:100%;
-
-}
-
-.hero h1{
-
-font-size:58px;
-
-}
-
-.intro-quote p{
-
-font-size:22px;
-
-}
-
-}
-
-/* =========================================================
-   LIGHTBOX MOBILE
-========================================================= */
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
 
 @media (max-width:900px){
+
+    /* ==========================
+       HEADER
+    ========================== */
+
+    .header-inner{
+
+        padding:18px 24px;
+
+    }
+
+    .desktop-nav{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .brand{
+
+        font-size:15px;
+
+    }
+
+    /* ==========================
+       HERO
+    ========================== */
+
+    .hero{
+
+        min-height:85vh;
+
+        padding:120px 24px 70px;
+
+    }
+
+    .hero h1{
+
+        font-size:clamp(48px,12vw,72px);
+
+        max-width:100%;
+
+    }
+
+    .hero-description{
+
+        font-size:18px;
+
+    }
+
+    /* ==========================
+       INTRO
+    ========================== */
+
+    .intro-quote{
+
+        padding:120px 24px;
+
+    }
+
+    .intro-quote p{
+
+        font-size:21px;
+
+    }
+
+    /* ==========================
+       RECENT EXHIBITION
+    ========================== */
+
+    .featured-exhibition{
+
+        padding:120px 24px;
+
+    }
+
+    .featured-grid{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+    }
+
+    .featured-image{
+
+        max-width:100%;
+
+    }
+
+    .exhibitionSwiper{
+
+        aspect-ratio:4/5;
+
+    }
+
+    .featured-text{
+
+        max-width:100%;
+
+    }
+
+    /* ==========================
+       WORKS
+    ========================== */
+
+    .works{
+
+        padding:120px 24px;
+
+    }
+
+    .section-heading{
+
+        margin-bottom:90px;
+
+    }
+
+    .series{
+
+        margin-bottom:120px;
+
+    }
+
+    .gallery.two-columns,
+    .gallery.three-columns{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery{
+
+        gap:70px;
+
+    }
+
+    .vertical{
+
+        width:100%;
+
+    }
+
+    .horizontal,
+    .hero-piece{
+
+        grid-column:auto;
+
+    }
+
+    .series-title{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+    /* ==========================
+       BIOGRAPHY
+    ========================== */
+
+    .biography{
+
+        padding:120px 24px;
+
+    }
+
+    .biography-grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .biography-title{
+
+        position:static;
+
+    }
+
+    .biography-image{
+
+        justify-content:center;
+
+    }
+
+    .biography-image img{
+
+        max-width:380px;
+
+    }
+
+    /* ==========================
+       CONTACT
+    ========================== */
+
+    .contact{
+
+        padding:120px 24px;
+
+    }
+
+    .contact-links{
+
+        flex-direction:column;
+
+        gap:18px;
+
+    }
+
+    /* ==========================
+       LIGHTBOX
+    ========================== */
 
     .lightbox{
 
@@ -1698,7 +1382,7 @@ font-size:22px;
 
         align-items:flex-start;
 
-        padding:70px 20px 40px;
+        padding:80px 20px 40px;
 
     }
 
@@ -1714,19 +1398,9 @@ font-size:22px;
 
     }
 
-    .lightbox-image{
-
-        width:100%;
-
-    }
-
     .lightbox-image img{
 
-        width:100%;
-
-        max-height:60vh;
-
-        object-fit:contain;
+        max-height:65vh;
 
     }
 
@@ -1734,75 +1408,33 @@ font-size:22px;
 
         width:100%;
 
-        padding:0;
-
-    }
-
-    .lightbox-navigation{
-
-        margin-top:40px;
-
-    }
-
-    .close-btn{
-
-        top:20px;
-
-        right:20px;
-
     }
 
 }
 
-/*=========================================================
-MOBILE FIXES
-=========================================================*/
-
 @media (max-width:640px){
 
-    /* Desactiva el efecto sticky de Biography */
+    .hero{
 
-    .biography-title{
-
-        position:static;
-
-        top:auto;
-
-        margin-bottom:24px;
+        padding-top:110px;
 
     }
 
-    /* El texto ocupa todo el ancho */
+    h1{
 
-    .biography-text{
-
-        max-width:100%;
+        font-size:44px;
 
     }
 
-    .biography-text p{
+    h2{
 
-        max-width:none;
-
-        font-size:17px;
-
-        line-height:1.8;
+        font-size:32px;
 
     }
 
-    /* La imagen no sobresale */
+    p{
 
-    .biography-image{
-
-        justify-content:center;
-
-    }
-
-    .biography-image img{
-
-        width:100%;
-
-        max-width:360px;
+        font-size:16px;
 
     }
 
