@@ -1293,68 +1293,59 @@ transform:translateY(40px);
 
 @media(max-width:900px){
 
-.header-inner{
-
-    padding:18px;
-
-    gap:18px;
-
-}
+/* ==========================
+   HEADER
+========================== */
 
 .site-header{
-
     backdrop-filter:blur(12px);
+}
 
+.header-inner{
+    padding:18px;
+    gap:18px;
 }
 
 .brand{
-
     font-size:15px;
-
     letter-spacing:.02em;
-
     white-space:nowrap;
+}
 
+.desktop-nav{
+    display:none;
+}
+
+.menu-toggle{
+    display:block;
 }
 
 nav{
-
     gap:14px;
-
     flex-wrap:wrap;
-
     justify-content:flex-end;
-
 }
 
 nav a{
-
     font-size:10px;
-
     letter-spacing:.12em;
-
 }
 
+/* ==========================
+   SECCIONES
+========================== */
+
 .hero{
-
-padding:0 25px;
-
+    padding:0 25px;
 }
 
 .works,
 .contact,
 .biography{
-
-padding:120px 25px;
-
+    padding:120px 25px;
 }
 
-@media(max-width:900px){
-
-.header-inner{
-    padding:25px;
 }
-
 /* ==========================
    MENÚ MÓVIL
 ========================== */
@@ -1387,22 +1378,6 @@ RECENT EXHIBITION
 .featured-exhibition{
 
     padding:160px 7vw 220px;
-
-}
-
-.featured-grid{
-
-    max-width:1600px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:1.45fr .85fr;
-
-    gap:90px;
-
-    align-items:center;
 
 }
 
