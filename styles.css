@@ -1111,13 +1111,17 @@ footer p{
        HEADER
     ========================== */
 
-    .header-inner{
+   .header-inner{
 
-    padding:20px;
+    padding:16px 20px;
+
     display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    gap:18px;
+
+    flex-direction:row;
+
+    justify-content:space-between;
+
+    align-items:center;
 
 }
 
@@ -1138,31 +1142,44 @@ footer p{
 
 }
    
-   .desktop-nav{
+.desktop-nav{
 
     display:flex;
 
-    gap:18px;
+    align-items:center;
 
-    flex-wrap:wrap;
+    gap:14px;
 
-    justify-content:flex-end;
-
-}
-
-.desktop-nav a{
-
-    font-size:11px;
-
-    letter-spacing:.12em;
+    flex-wrap:nowrap;
 
 }
    
-    .brand{
+.desktop-nav a{
 
-        font-size:15px;
+    font-size:10px;
 
-    }
+    letter-spacing:.08em;
+
+}
+   
+   .brand{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.brand img{
+
+    width:28px;
+
+    height:28px;
+
+    display:block;
+
+}
+   
 
     /* ==========================
        HERO
