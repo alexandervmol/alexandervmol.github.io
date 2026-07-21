@@ -1111,7 +1111,7 @@ footer p{
        HEADER
     ========================== */
 
-   .header-inner{
+  .header-inner{
 
     padding:16px 20px;
 
@@ -1119,9 +1119,9 @@ footer p{
 
     flex-direction:row;
 
-    justify-content:space-between;
-
     align-items:center;
+
+    gap:24px;
 
 }
 
@@ -1148,9 +1148,11 @@ footer p{
 
     align-items:center;
 
+    justify-content:flex-end;
+
     gap:14px;
 
-    flex-wrap:nowrap;
+    flex:1;
 
 }
    
