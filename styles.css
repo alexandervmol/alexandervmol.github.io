@@ -1111,64 +1111,51 @@ footer p{
        HEADER
     ========================== */
 
-  .header-inner{
+.header-inner{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
 
     padding:16px 20px;
 
-    display:flex;
-
-    flex-direction:row;
-
-    align-items:center;
-
-    gap:24px;
+    gap:18px;
 
 }
 
 .desktop-nav{
 
-    width:100%;
     display:flex;
-    justify-content:space-between;
-    gap:10px;
-    flex-wrap:wrap;
-
-}
-
-.desktop-nav a{
-
-    font-size:10px;
-    letter-spacing:.08em;
-
-}
-   
-.desktop-nav{
-
-    display:flex;
-
-    align-items:center;
 
     justify-content:flex-end;
 
-    gap:14px;
+    align-items:center;
+
+    gap:18px;
 
     flex:1;
 
 }
-   
+
 .desktop-nav a{
 
-    font-size:10px;
+    font-size:11px;
 
     letter-spacing:.08em;
 
+    white-space:nowrap;
+
 }
-   
-   .brand{
+
+.brand{
 
     display:flex;
 
     align-items:center;
+
+    flex-shrink:0;
 
 }
 
