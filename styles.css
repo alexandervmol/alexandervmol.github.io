@@ -419,17 +419,7 @@ p{
 .exhibitionSwiper{
 
     width:100%;
-
-    overflow:hidden;
-
-    position:relative;
-
-}
-
-.exhibitionSwiper{
-
-    width:100%;
-    height:420px;
+    height:760px;
     overflow:hidden;
     position:relative;
 
@@ -1222,10 +1212,7 @@ footer p{
 
 .exhibitionSwiper{
 
-    width:100%;
     height:320px;
-    overflow:hidden;
-    position:relative;
 
 }
 
