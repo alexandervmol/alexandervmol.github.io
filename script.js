@@ -270,9 +270,6 @@ const swiper = new Swiper(".exhibitionSwiper", {
     observeParents: true,
     updateOnWindowResize: true,
 
-    preloadImages: false,
-    lazy: false,
-
     pagination: {
         el: ".swiper-pagination",
         clickable: true
@@ -287,5 +284,3 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
     swiper.update();
 });
-
-
