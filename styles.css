@@ -1239,7 +1239,43 @@ transform:translateY(40px);
 
 .header-inner{
 
-padding:25px;
+    padding:18px;
+
+    gap:18px;
+
+}
+
+.site-header{
+
+    backdrop-filter:blur(12px);
+
+}
+
+.brand{
+
+    font-size:15px;
+
+    letter-spacing:.02em;
+
+    white-space:nowrap;
+
+}
+
+nav{
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+    justify-content:flex-end;
+
+}
+
+nav a{
+
+    font-size:10px;
+
+    letter-spacing:.12em;
 
 }
 
