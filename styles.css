@@ -174,43 +174,43 @@ HEADER
 
     z-index:1000;
 
-    background:rgba(255,255,255,.82);
+    background:rgba(255,255,255,.78);
 
-    backdrop-filter:blur(16px);
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
 
     border-bottom:1px solid rgba(0,0,0,.05);
 
     transition:
-        transform .5s ease,
-        background .5s ease;
+        transform .55s ease,
+        background .45s ease,
+        border-color .45s ease;
 
 }
 
 .header-inner{
 
-    max-width:1700px;
+    max-width:1600px;
 
     margin:auto;
 
-    padding:26px 60px;
+    padding:24px 48px;
 
     display:flex;
 
-    justify-content:space-between;
-
     align-items:center;
+
+    justify-content:space-between;
 
 }
 
 .brand{
 
-    font-size:18px;
+    font-size:17px;
 
     font-weight:500;
 
-    letter-spacing:.04em;
-
-    white-space:nowrap;
+    letter-spacing:.06em;
 
 }
 
@@ -218,7 +218,9 @@ HEADER
 
     display:flex;
 
-    gap:52px;
+    align-items:center;
+
+    gap:42px;
 
 }
 
@@ -226,13 +228,18 @@ HEADER
 
     position:relative;
 
-    font-size:13px;
+    font-size:12px;
 
-    letter-spacing:.18em;
+    font-weight:400;
+
+    letter-spacing:.20em;
 
     text-transform:uppercase;
 
+    transition:opacity .3s ease;
+
 }
+
 
 .desktop-nav a::after{
 
@@ -242,7 +249,7 @@ HEADER
 
     left:0;
 
-    bottom:-8px;
+    bottom:-6px;
 
     width:0;
 
@@ -250,7 +257,7 @@ HEADER
 
     background:#111;
 
-    transition:.35s;
+    transition:width .35s ease;
 
 }
 
