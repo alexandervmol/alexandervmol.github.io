@@ -269,12 +269,4 @@ const swiper = new Swiper(".exhibitionSwiper",{
 });
 
 
-const menuButton = document.querySelector(".menu-toggle");
 
-const mobileMenu = document.querySelector(".mobile-menu");
-
-menuButton.addEventListener("click",()=>{
-
-    mobileMenu.classList.toggle("active");
-
-});
