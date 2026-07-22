@@ -244,4 +244,52 @@ gsap.utils.toArray(".art-piece img").forEach(image=>{
 
 });
 
+// =====================================================
+// RECENT EXHIBITION SLIDER
+// =====================================================
+
+const slides = document.querySelectorAll(".exhibition-slider .slide");
+const dots = document.querySelectorAll(".slider-dots .dot");
+
+let currentSlide = 0;
+
+function showSlide(index){
+
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+
+        currentSlide = 0;
+
+    }
+
+    showSlide(currentSlide);
+
+}
+
+setInterval(nextSlide, 3500);
+
+// Permite cambiar haciendo clic en los puntos
+
+dots.forEach((dot,index)=>{
+
+    dot.addEventListener("click",()=>{
+
+        currentSlide = index;
+
+        showSlide(currentSlide);
+
+    });
+
+});
 
