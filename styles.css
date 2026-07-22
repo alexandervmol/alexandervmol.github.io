@@ -119,13 +119,13 @@ section{
 
 h1{
 
-    font-size:clamp(58px,7vw,118px);
+    font-size:clamp(48px,5.8vw,92px);
 
     font-weight:400;
 
-    line-height:.95;
+    line-height:.98;
 
-    letter-spacing:-0.04em;
+    letter-spacing:-0.03em;
 
 }
 
